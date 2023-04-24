@@ -1,0 +1,18 @@
+
+
+ {
+    "users": [
+      {"id":1,
+        "username": "Admin",
+        "password": "admin123",
+        "usertype": "Admin",
+        "completename":"Richie Gerardo Nuez"
+      },
+      {"id":2,
+        "username": "User",
+        "password": "NewUser",
+        "usertype": "User",
+        "completename":"User User User"
+      }
+    ]
+  }

@@ -1,0 +1,84 @@
+
+
+{
+    "users": [
+      {
+        "menu": "Admin",
+        "link": "admin123"
+        ,"icons":"fa-thin fa-file-chart-column"
+      },
+      {
+        "menu": "User",
+        "link": "NewUser"
+        ,"icons":"fa-thin fa-file-chart-column"
+      }
+    ],
+    "AdminSetup":[
+     
+        {
+            "menu": "Users Account",
+            "link": "accounts.html",
+            "icons":"fa-file-chart-column"
+
+           
+        } ,  {
+            "menu": "Dapartment",
+            "link": "department.html",
+            "icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Item Registraion",
+            "link": "item.html"
+           ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Dapartment",
+            "link": "department.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Dapartment",
+            "link": "department.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        }
+
+    ],
+    "Admintransaction":[
+     
+        {
+            "menu": "Users Account",
+            "link": "accounts.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        } ,  {
+            "menu": "Dapartment",
+            "link": "department.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Item Registraion",
+            "link": "item.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Dapartment",
+            "link": "department.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Dapartment",
+            "link": "department.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        }
+
+    ], "AdminReports":[
+     
+      {
+            "menu": "Property",
+            "link": "department.html"
+            ,"icons":"fa fa-align-right"
+        },  {
+            "menu": "Stock Card",
+            "link": "item.html"
+            ,"icons":"fa fa-align-left"
+        },  {
+            "menu": "Property Index",
+            "link": "item.html"
+            ,"icons":"fa fa-align-justify"
+        }
+
+    ]
+  }
