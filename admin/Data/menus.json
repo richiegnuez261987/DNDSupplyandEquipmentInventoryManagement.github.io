@@ -30,15 +30,10 @@
             "link": "item.html"
            ,"icons":"fa-thin fa-file-chart-column"
         },  {
-            "menu": "Dapartment",
-            "link": "department.html"
-            ,"icons":"fa-thin fa-file-chart-column"
-        },  {
-            "menu": "Dapartment",
-            "link": "department.html"
+            "menu": "Units",
+            "link": "unit.html"
             ,"icons":"fa-thin fa-file-chart-column"
         }
-
     ],
     "Admintransaction":[
      
