@@ -26,7 +26,7 @@ fetch("../admin/Data/menus.json")
 .then(response => response.json())
 .then(data => {
     var menudetails = "";
-  for (const user of data.Admintransaction) {
+  for (const user of data.AdminSetup) {
 
 
     menudetails +=   `<li><a href="${user.link}" class="dropdown-item">  <i class="${user.icons}"></i> &nbsp;&nbsp; ${user.menu}</a></li>`;
@@ -42,7 +42,7 @@ fetch("../admin/Data/menus.json")
 .then(response => response.json())
 .then(data => {
     var menudetails = "";
-  for (const user of data.AdminSetup) {
+  for (const user of data.Admintransaction) {
 
 
     menudetails +=   `<li><a href="${user.link}" class="dropdown-item">  <i class="${user.icons}"></i> &nbsp;&nbsp; ${user.menu}</a></li>`;

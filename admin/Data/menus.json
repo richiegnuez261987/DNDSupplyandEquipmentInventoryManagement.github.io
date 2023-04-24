@@ -38,24 +38,16 @@
     "Admintransaction":[
      
         {
-            "menu": "Users Account",
-            "link": "accounts.html"
+            "menu": "Receiving",
+            "link": "Receiving.html"
             ,"icons":"fa-thin fa-file-chart-column"
         } ,  {
-            "menu": "Dapartment",
-            "link": "department.html"
+            "menu": "Issuance",
+            "link": "issuance.html"
             ,"icons":"fa-thin fa-file-chart-column"
         },  {
-            "menu": "Item Registraion",
-            "link": "item.html"
-            ,"icons":"fa-thin fa-file-chart-column"
-        },  {
-            "menu": "Dapartment",
-            "link": "department.html"
-            ,"icons":"fa-thin fa-file-chart-column"
-        },  {
-            "menu": "Dapartment",
-            "link": "department.html"
+            "menu": "Return",
+            "link": "return.html"
             ,"icons":"fa-thin fa-file-chart-column"
         }
 
