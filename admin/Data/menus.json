@@ -22,7 +22,7 @@
 
            
         } ,  {
-            "menu": "Dapartment",
+            "menu": "Department",
             "link": "department.html",
             "icons":"fa-thin fa-file-chart-column"
         },  {
@@ -39,7 +39,7 @@
      
         {
             "menu": "Receiving",
-            "link": "Receiving.html"
+            "link": "receiving.html"
             ,"icons":"fa-thin fa-file-chart-column"
         } ,  {
             "menu": "Issuance",
