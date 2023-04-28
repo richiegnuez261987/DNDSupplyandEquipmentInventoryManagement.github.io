@@ -84,8 +84,7 @@ function showAccounts(){
 
     menudetails +=   `<tr><td>${user.username}</td>
                         <td>${user.completename}</td>
-                        <td><span class="btn btn-warning">Edit</span>
-                        <span class="btn btn-danger">Delete</span></td></tr>`;
+                        </tr>`;
   }
 
 

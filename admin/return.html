@@ -145,26 +145,36 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
-                            <div class="card-header bg-primary text-white">Department Registration</div>
+                            <div class="card-header bg-primary text-white">Item Registration</div>
                             <div class="card-body">
                                 <br />
                                 <div>
 
                                     <div class="form-group">
-                                        <label for="txtDepartmentName" class="form-label">Department Name:</label>
-                                        <input type="text" name="txtDepartmentName" id="txtDepartmentName" required="true"
-                                            placeholder="Department" class="form-control">
+                                        <label for="txtitem" class="form-label">Item Name:</label>
+                                        <input type="text" name="txtitem" id="txtitem" required="true"
+                                            placeholder="Item Name" class="form-control">
                                     </div><br />
                                     <div class="form-group">
-                                        <label for="txtDepartmentCode" class="form-label">Department Code:</label>
-                                        <input type="text" name="txtDepartmentCode" id="txtDepartmentCode" required="true"
-                                            placeholder="Code" class="form-control">
+                                        <label for="txtdescription" class="form-label">Description:</label>
+                                        <input type="text" name="txtdescription" id="txtdescription" required="true"
+                                            placeholder="Description" class="form-control">
                                     </div><br />
                                    
+                                    <div class="form-group">
+                                        <label for="selunits" class="form-label">Unit of Measurement:</label>
+                                       <select id="selunits" class="form-control">
 
+                                       </select>
+                                    </div><br />
+                                    <div class="form-group">
+                                        <label for="txtreorderpoint" class="form-label">Reorder Point:</label>
+                                        <input type="text" name="txtreorderpoint" id="txtreorderpoint" required="true"
+                                            placeholder="Re-order Point" class="form-control">
+                                    </div>
                                     <br />
-                                    <button class="btn btn-primary" id="btnSaveAccount"
-                                        onclick="SaveAccount()">Save</button>
+                                    <button class="btn btn-primary" id="btnSaveItems"
+                                        onclick="saveitems()">Save</button>
 
                                 </div>
                             </div>
@@ -179,11 +189,13 @@
 
                             <table style="margin: 10px;padding: 10px;" class="table table-stripped">
                                 <tr>
-                                    <th>Code</th>
-                                    <th>Department</th>
+                                    <th>Item Name</th>
+                                    <th>Description</th>
+                                    <th>Units</th>
+                                    <th>Re-order Point</th>
                                     <th>Action</th>
                                 </tr>
-                                <tbody id="tbldept">
+                                <tbody id="tblitem">
 
                                 </tbody>
                             </table>
@@ -196,6 +208,7 @@
         </div>
     </div>
     
+    <script src="item.js"></script>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -1,27 +1,65 @@
 
 
 {
-    "users": [
+    "userssetup": [
+        {
+            "menu": "Department",
+            "link": "department.html",
+            "icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Item Registraion",
+            "link": "item.html"
+           ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Units",
+            "link": "unit.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        }
+    ],
+    "Usertransaction":[
+     
+        {
+            "menu": "Receiving",
+            "link": "receiving.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        } ,  {
+            "menu": "Issuance",
+            "link": "issuance.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        },  {
+            "menu": "Return",
+            "link": "return.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        }
+
+    ], "UserReports":[
+     
       {
-        "menu": "Admin",
-        "link": "admin123"
-        ,"icons":"fa-thin fa-file-chart-column"
-      },
-      {
-        "menu": "User",
-        "link": "NewUser"
-        ,"icons":"fa-thin fa-file-chart-column"
-      }
+            "menu": "Property",
+            "link": "property.html"
+            ,"icons":"fa fa-align-right"
+        },  {
+            "menu": "Stock Card",
+            "link": "item.html"
+            ,"icons":"fa fa-align-left"
+        },  {
+            "menu": "Property Index",
+            "link": "propertyindex.html"
+            ,"icons":"fa fa-align-justify"
+        }
+
     ],
     "AdminSetup":[
      
         {
             "menu": "Users Account",
             "link": "accounts.html",
-            "icons":"fa-file-chart-column"
-
-           
-        } ,  {
+            "icons":"fa-file-chart-column"         
+        } ,{
+            "menu": "Employee Registration",
+            "link": "employee.html"
+            ,"icons":"fa-thin fa-file-chart-column"
+        },  {
             "menu": "Department",
             "link": "department.html",
             "icons":"fa-thin fa-file-chart-column"
@@ -55,7 +93,7 @@
      
       {
             "menu": "Property",
-            "link": "department.html"
+            "link": "property.html"
             ,"icons":"fa fa-align-right"
         },  {
             "menu": "Stock Card",
@@ -63,7 +101,7 @@
             ,"icons":"fa fa-align-left"
         },  {
             "menu": "Property Index",
-            "link": "item.html"
+            "link": "propertyindex.html"
             ,"icons":"fa fa-align-justify"
         }
 

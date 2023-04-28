@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+
 </head>
 
 <body>
@@ -145,26 +146,40 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="card">
-                            <div class="card-header bg-primary text-white">Department Registration</div>
+                            <div class="card-header bg-primary text-white">Employee Registration</div>
                             <div class="card-body">
                                 <br />
                                 <div>
 
+                                 
                                     <div class="form-group">
-                                        <label for="txtDepartmentName" class="form-label">Department Name:</label>
-                                        <input type="text" name="txtDepartmentName" id="txtDepartmentName" required="true"
-                                            placeholder="Department" class="form-control">
-                                    </div><br />
+                                        <label for="txtfname" class="form-label">First Name:</label>
+                                        <input type="text" name="txtfname" id="txtfname" required="true"
+                                            placeholder="First Name" class="form-control">
+                                    </div>
                                     <div class="form-group">
-                                        <label for="txtDepartmentCode" class="form-label">Department Code:</label>
-                                        <input type="text" name="txtDepartmentCode" id="txtDepartmentCode" required="true"
-                                            placeholder="Code" class="form-control">
-                                    </div><br />
-                                   
-
+                                        <label for="txtmname" class="form-label">Middle Name:</label>
+                                        <input type="text" name="txtmname" id="txtmname" required="true"
+                                            placeholder="Middle Name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtlname" class="form-label">Last Name:</label>
+                                        <input type="text" name="txtlname" id="txtlname" required="true"
+                                            placeholder="Last Name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtcontact" class="form-label">Contact No:</label>
+                                        <input type="Number" name="txtcontact" id="txtcontact" required="true"
+                                            placeholder="Contact No." class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtPosition" class="form-label">Position:</label>
+                                        <input type="text" name="txtPosition" id="txtPosition" required="true"
+                                            placeholder="Position" class="form-control">
+                                    </div>
                                     <br />
                                     <button class="btn btn-primary" id="btnSaveAccount"
-                                        onclick="SaveAccount()">Save</button>
+                                        onclick="saveemployee()">Save</button>
 
                                 </div>
                             </div>
@@ -179,11 +194,13 @@
 
                             <table style="margin: 10px;padding: 10px;" class="table table-stripped">
                                 <tr>
-                                    <th>Code</th>
-                                    <th>Department</th>
-                                    <th>Action</th>
+                                    <th>Frist Name</th>
+                                    <th>Middle Name</th>
+                                    <th>Last Name</th>
+                                    <th>Contact No:</th>
+                                    <th>Position</th>
                                 </tr>
-                                <tbody id="tbldept">
+                                <tbody id="tblemployee">
 
                                 </tbody>
                             </table>
@@ -195,7 +212,7 @@
 
         </div>
     </div>
-    
+    <script src="employee.js"></script>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
