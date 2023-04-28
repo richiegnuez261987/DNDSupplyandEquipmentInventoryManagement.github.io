@@ -21,7 +21,7 @@
 .fa-user-circle{
     margin-top: -70px;
     margin-left:35%;
-    color: rgb(82, 177, 244);
+    color: rgb(98, 120, 236);
     font-size: 120px;
 }
 form{
@@ -33,7 +33,7 @@ label{
     color: rgb(136, 133, 133);
 }
 .login-button{
-    background-color: rgb(82, 177, 244);
+    background-color: rgb(98, 120, 236);
     border: none;
     border-radius:10px;
     font-size:20px;
@@ -46,11 +46,26 @@ label{
     background-color: rgb(167, 171, 243);
 }
 @media screen and (min-width:320px) {
+    nav{
+        padding: 5px;
+        width: 100%;
+        background: rgb(98, 120, 236);
+    }
+    .nav-brand > img{
+        width: 80px;
+    }
+    .nav-brand{
+        font-size: 20px;
+        color:rgb(243, 243, 243);
+        text-decoration: none;
+    }
     .login-Container{
         display: grid;
         grid-template-columns: 1fr;
         width: 90%;
         height: 400px;
+        margin-top: -50px;
+        padding-bottom: 50px;
     }
     .image1{
         display: none;
@@ -62,20 +77,36 @@ label{
     .login-button{
         margin-top: 10px;
     }
-    footer{
-        padding-top: 5px;
+    .footer-body{
+        background:linear-gradient(to bottom right, rgb(99, 65, 229), rgb(82, 177, 244));
+        margin-top:50px;
+        padding: 40px 20px 0 20px;
         text-align: center;
-        background-color: rgb(82, 177, 244);
-        height: 50px;
+    }
+    .footer-inner:nth-child(1){
+        margin-bottom: 60px;
+    }
+    .footer-inner:nth-child(1) > img{
+        width: 150px;
+    }
+    .footer-inner:nth-child(1) > h3{
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px rgb(44, 44, 44);
+    }
+    .footer-inner2{
+        padding-bottom: 20px;
+        color: white;
     }
 }
 @media screen and (min-width:481px) {
     .fa-user-circle{
         margin-top: -70px;
-        margin-left:30%;
+        margin-left:35%;
     }
 }
-@media screen and (min-width:481px){
+@media screen and (min-width:769px){
     .image1{
         display: block;
     }
