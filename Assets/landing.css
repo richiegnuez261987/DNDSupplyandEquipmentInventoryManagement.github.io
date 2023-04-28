@@ -8,10 +8,17 @@
         padding-top: 10px;
         width: 100%;
     }
-    .navigation > img{
-        width: 70px;
+    .nav-brand{
+        font-size: 15px;
+        text-decoration:none;
+        color: rgb(245, 242, 242);
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgb(90, 90, 90);
     }
-    .links{
+    .navigation > .nav-brand > img{
+        width: 60px;
+    }
+    /* .links{
         float: right;
         margin-right: 10px;
     }
@@ -23,7 +30,7 @@
     .links > a:hover{
         text-decoration: underline;
         color: black;
-    }
+    } */
     .banner-bg{
         width: 100%;
         height: 300px;
@@ -45,7 +52,7 @@
     .signInBtn{
         padding: 10px 20px 10px 20px;
         border-radius: 10px;
-        background:rgb(94, 182, 236);
+        background:rgb(98, 120, 236);
         box-shadow: 1px 1px 10px rgb(141, 141, 141);
         color: white;
         text-decoration: none;
@@ -54,14 +61,18 @@
         background:rgb(52, 99, 128);
     }
     .grid-banner > h3{
+        color: white;
         font-weight: bold;
-        text-shadow: 1px 1px 3px rgb(190, 190, 190);
+        text-shadow: 1px 1px 5px rgb(70, 70, 70);
+    }
+    .grid-banner > p{
+        color:rgb(91, 57, 153);
     }
     .grid-banner:nth-child(2){
         padding-left:50px;
     }
     .grid-banner > img{
-        width: 85%;
+        width: 90%;
         animation:from-top-to-bottom 2s ease-out;
     }
     @keyframes from-top-to-bottom{
@@ -75,10 +86,10 @@
         }
     }
     .content > p > b{
-        color:rgb(82, 177, 244);
+        color:rgb(98, 120, 236);
     }
     .desc{
-        margin: 0 10px 0 10px;
+        margin: 0 20px 0 20px;
         font-size: 13px;
     }
     .tbl-cont{
@@ -104,11 +115,58 @@
         font-size: 20px;
     }
     footer{
-        text-align: center;
-        background-color: rgb(82, 177, 244);
-        height: 50px;
-        color: white;
         padding-top: 10px;
+    }
+    .footer-header{
+        display:inline-block;
+        margin-top:60px ;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+        width: 90%;
+        padding-left:8px;
+        padding-right:8px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        background-color: white;
+        text-align: center;
+    }
+    .footer-brand{
+        text-decoration: none;
+        color: rgb(34, 34, 34);
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .footer-login{
+        background-color: rgb(98, 120, 236);
+        border-radius: 50px;
+        padding:5px 20px 5px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .footer-login:hover{
+        background-color: rgb(82, 56, 112);
+    }
+    .footer-body{
+        background:linear-gradient(to bottom right, rgb(99, 65, 229), rgb(82, 177, 244));
+        margin-top:-50px;
+        padding: 90px 20px 0 20px;
+        text-align: center;
+    }
+    .footer-inner:nth-child(1){
+        margin-bottom: 60px;
+    }
+    .footer-inner:nth-child(1) > img{
+        width: 150px;
+    }
+    .footer-inner:nth-child(1) > h3{
+        font-size: 18px;
+        color: white;
+        font-weight: bold;
+        text-shadow: 1px 1px 5px rgb(44, 44, 44);
+    }
+    .footer-inner2{
+        padding-bottom: 20px;
+        color: white;
     }
 }
 @media screen and (min-width:481px) {
@@ -117,22 +175,22 @@
         padding-top: 10px;
         width: 100%;
     }
-    .navigation > img{
-        width: 70px;
+    .navigation > .nav-brand > img{
+        width: 60px;
     }
-    .links{
+    /* .links{
         float: right;
         margin-right: 25px;
     }
     .links > a{
         text-decoration: none;
-        color: white;
+        color: rgb(44, 44, 44);
         margin-right: 10px;
     }
     .links > a:hover{
         text-decoration: underline;
         color: black;
-    }
+    } */
     .desc{
         margin: 0 10px 0 10px;
         font-size: 15px;
@@ -161,61 +219,115 @@
     }
 }
 @media screen and (min-width:769px){
-    .links{
+    .nav-brand{
+        font-size: 20px;
+        text-decoration:none;
+        color: rgb(245, 242, 242);
+        font-weight: bold;
+        text-shadow: 1px 1px 3px rgb(66, 66, 66);
+        margin-left: 30px;
+    }
+    /* .links{
         float: right;
         margin-right: 35px;
     }
+    .links > a{
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 18px;
+    }
+    .links > a:hover{
+        text-shadow: 1px 1px 5px rgb(224, 224, 224);
+    } */
     .banner{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: -250px;
     }
+    .banner-bg{
+        height: 350px;
+    }
     .grid-banner > img{
         width: 100%;
         margin-top: -50px;
     }
-    .banner-bg{
-        height: 350px;
+    .grid-banner > p{
+        color:rgb(59, 37, 100);
     }
     .signInBtn{
         padding: 8px 15px 8px 15px;
-        box-shadow: none;
+        box-shadow: 1px 1px 5px rgb(78, 78, 78);
     }
     .grid-banner:nth-child(1){
-        padding:0 20px 0 20px ;
+        padding:0 20px 0 40px ;
+        text-align: start;
+    }
+    .tbl-cont{
+        padding: 0px 35px 0px 35px;
+    }
+    .image{
+        margin-right: 30px;
+        width: 80%;
+        height: 230px;
+        padding-top: 5px;
     }
     .image > img{
-        width: 60%;
-        margin-top: 10px;
+        width: 80%;
     }
-    .tbl2 > .table-grid:nth-child(2){
-        margin-top: -180px;
-    }
-    .tbl2 > .table-grid:nth-child(1){
-        margin-left: 70px;
+    .desc-list > p{
+        margin-left: 25px;
+        text-align: start;
     }
 }
 @media screen and (min-width:1025px){
-    .navigation > img{
-        width: 90px;
+    .nav-brand{
+        margin-left: 50px;
     }
-    .links{
+    
+    /* .links{
         margin-right:70px;
     }
     .links > a{
         font-size: 18px;
-    }
+    } */
     .banner-bg{
-        height: 400px;
+        height: 450px;
+    }
+    .grid-banner:nth-child(1){
+        margin-top: -50px;
+        padding-left: 60px;
     }
     .grid-banner > img{
         width: 90%;
-        margin-top: -80px;
+        margin-top: -120px;
     }
-    .tbl2 > .table-grid:nth-child(2){
+    .desc{
+        margin: 0 30px 0 30px;
+        font-size: 20px;
+    }
+    .tbl-cont{
+        padding: 0px 35px 0px 35px;
+    }
+    .image{
+        margin-right: 30px;
+        width: 80%;
+        height: 230px;
+        padding-top: 10px;
+    }
+    .image > img{
+        width: 60%;
+    }
+    .desc-list > p{
+        margin-left: 25px;
+    }
+    
+    /* .tbl2 > .table-grid:nth-child(2){
         margin-top: -230px;
-    }
+    } */
     .table-title{
         text-align: start;
+    }
+    .table-grid > ul{
+        font-size: 18px;
     }
 }
