@@ -118,3 +118,63 @@ function deleteitem(index){
   loaditems();
 }
 
+
+let newPo ={myitems:[]}
+let newdeteails = [];
+function savetrans(){
+let txtsupplier =document.getElementById('txtsupplier');
+let txtDr =document.getElementById('txtDr');
+let dtpDrDate =document.getElementById('dtpDrDate');
+let txtpo =document.getElementById('txtpo');
+let dtpPodate =document.getElementById('dtpPodate');
+newdeteails.push();
+  newPo.myitems.push({txtsupplier:txtsupplier.value,
+    txtDr:txtDr.value,
+    dtpDrDate:dtpDrDate.value,
+    txtpo:txtpo.value,
+    dtpPodate:dtpPodate.value,
+    details: itemrec.items
+  })
+ var details = "";
+ var tbldel = document.getElementById("tbldel");
+
+//  console.log(newPo.myitems);
+  newPo.myitems.forEach(function(item){
+ details += `<tr>
+              <td>${item.txtsupplier}</td>
+              <td>${item.txtDr}</td>
+              <td>${item.dtpDrDate}</td>
+              <td>${item.txtpo}</td>
+              <td>${item.dtpPodate}</td>
+              
+            </tr>
+           
+            `;
+
+            item.details.forEach(function(newitem){
+              details += `<tr>
+              <td colspan="5">
+              <table class="table">
+                <tr>
+                  <td>Item Name</td>
+                  <td>Description </td>
+                  <td>Quantity</td>
+                </tr>
+              <tr>
+              <td>${newitem.itemname}</td>
+              <td>${newitem.description}</td>
+              <td>${newitem.quantity}</td>
+              </tr>
+              </table>
+
+              </td>
+             
+            </tr>
+           
+            `;
+            })
+  })
+  tbldel.innerHTML = details;
+
+  localStorage.setItem("myReceive", JSON.stringify(newPo));
+}

@@ -147,7 +147,7 @@
                 </a>
                 <br>
                 <br>
-                <a href="../index.html" type="button" class="offcanvas-buttons">
+                <a href="#" type="button" class="offcanvas-buttons">
                     <i class="fas fa-right-from-bracket"></i>
                 </a>
             </div>
@@ -191,7 +191,7 @@
                                         <input type="date" name="dtpPodate" id="dtpPodate" required="true"
                                             placeholder="Purchase Order Number" class="form-control">
                                     </div><br />
-                                    <button class="btn btn-primary" id="btnSaveItems" onclick="saveitems()">Save
+                                    <button class="btn btn-primary" id="btnSaveItems" onclick="savetrans()">Save
                                         Delivery</button>
 
                                 </div>
@@ -242,8 +242,36 @@
 
             </div>
 
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">List of Delivery </div>
+                        <div class="card-body">
+                            <br>
+                            <table style="margin: 10px;padding: 10px;" class="table table-stripped">
+                                <tr>
+                                    <th>Supplier</th>
+                                    <th>Delivery Receipt Number</th>
+                                    <th>Date of delivery</th>
+                                    <th>Purchase Order Number</th>
+                                    <th>P.O. Date</th>
+                                   
+                                </tr>
+                                <tbody id="tbldel">
+                
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          
         </div>
 
+
+        
         <!-- The Modal -->
         <div class="modal fade" id="myModal">
             <div class="modal-dialog modal-xl">

@@ -26,10 +26,6 @@
             "menu": "Issuance",
             "link": "issuance.html"
             ,"icons":"fa-thin fa-file-chart-column"
-        },  {
-            "menu": "Return",
-            "link": "return.html"
-            ,"icons":"fa-thin fa-file-chart-column"
         }
 
     ], "UserReports":[
@@ -82,10 +78,6 @@
         } ,  {
             "menu": "Issuance",
             "link": "issuance.html"
-            ,"icons":"fa-thin fa-file-chart-column"
-        },  {
-            "menu": "Return",
-            "link": "return.html"
             ,"icons":"fa-thin fa-file-chart-column"
         }
 
