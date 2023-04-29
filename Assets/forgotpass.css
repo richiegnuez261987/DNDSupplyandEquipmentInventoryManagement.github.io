@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    font-family: 'poppins', sans-serif;
+}
+.footer-body{
+    background:linear-gradient(to bottom right, rgb(99, 65, 229), rgb(82, 177, 244));
+    margin-top:50px;
+    padding: 40px 20px 0 20px;
+    text-align: center;
+}
+.footer-inner:nth-child(1){
+    margin-bottom: 60px;
+}
+.footer-inner:nth-child(1) > img{
+    width: 150px;
+}
+.footer-inner:nth-child(1) > h3{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgb(44, 44, 44);
+}
+.footer-inner2{
+    padding-bottom: 20px;
+    color: white;
+}
+@media screen and (min-width:320px) {
+    .main-container{
+        margin-top:120px;
+    }
+    .form-container{
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+        width: 80%;
+        padding:10px 20px 0 20px;
+        height: 330px;
+        margin: 0 5px 0 10px;
+    }
+    .form-header{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .form-body-text{
+        font-size: 18px;
+    }
+    .form-input{
+        display:block;
+        border: 1px solid rgb(172, 172, 172);
+        border-radius:10px;
+        width:100%;
+        height:35px;
+        margin: auto;
+        padding-left: 5px;
+        margin-bottom: 40px;
+    }
+    hr{
+        color: rgb(207, 206, 206);
+    }
+    .form-footer{
+        margin-top:10px;
+        border-radius: 10px;
+        padding: 10px;
+        float: right;
+        color: black;
+        text-decoration: none;
+    }
+    .cancelbtn{
+        background-color: rgb(199, 198, 198);
+        margin-right: 10px;
+    }
+    .submitbtn{
+        background-color: rgb(98, 120, 236);
+    }
+    
+}
+@media screen and (min-width:480px) {
+    .main-container{
+        margin-top:120px;
+    }
+    .form-container{
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+        width: 80%;
+        padding:10px 20px 0 20px;
+        height: 320px;
+        margin: auto;
+    }
+    .form-header{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .form-body-text{
+        font-size: 18px;
+    }
+    .form-input{
+        display:block;
+        border: 1px solid rgb(172, 172, 172);
+        border-radius:10px;
+        width:100%;
+        height:35px;
+        margin: auto;
+        padding-left: 5px;
+        margin-bottom: 40px;
+    }
+    hr{
+        color: rgb(207, 206, 206);
+    }
+    .form-footer{
+        margin-top:10px;
+        border-radius: 10px;
+        padding: 10px;
+        float: right;
+        color: black;
+        text-decoration: none;
+    }
+    .cancelbtn{
+        background-color: rgb(199, 198, 198);
+        margin-right: 10px;
+    }
+    .submitbtn{
+        background-color: rgb(98, 120, 236);
+    }
+    
+}
+@media screen and (min-width:541px){
+    .form-container{
+        height: 300px;
+    }
+}
+@media screen and (min-width:769px){
+    .form-container{
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+        width: 50%;
+        padding:10px 20px 0 20px;
+        height: 320px;
+        margin: auto;
+    }
+}
