@@ -140,7 +140,7 @@ function deleteitem(index){
 
 let newPo ={myitems:[]};
 let newPo1 ={myitems:[]};
-newPo = JSON.parse(localStorage.getItem("myReceive"));
+
 let newdeteails = [];
 function savetrans(){
 let txtsupplier =document.getElementById('txtsupplier');
@@ -204,7 +204,20 @@ showReceive();
 function showReceive(){
   var details = "";
   var tbldel = document.getElementById("tbldel");
+
+
+
+
+
+  if(newPo.myitems.length != 1 ){
+    newPo = JSON.parse(localStorage.getItem("myReceive"));
+   
  
+     // console.log(myarr);
+ 
+ } else{
+   localStorage.setItem("myReceive", JSON.stringify(newPo));
+ }
  //  console.log(newPo.myitems);
    newPo.myitems.forEach(function(item){
   details += `<tr>
