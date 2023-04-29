@@ -17,7 +17,7 @@ Description:"A4",
 unit:"Ream",
 orderpoint:5}]}
 
-myitems = JSON.parse(localStorage.getItem("myitem"));
+// myitems = JSON.parse(localStorage.getItem("myitem"));
 function saveitems(){
 let txtitem = document.getElementById('txtitem').value;
 let txtdescription = document.getElementById('txtdescription').value;
@@ -29,17 +29,33 @@ myitems.items.push({itemNmae:txtitem
 unit:selunits,
 orderpoint:txtreorderpoint
 });
-load();
+
 
 localStorage.setItem("myitem", JSON.stringify(myitems));
 //console.log(data);
-
+load();
 }
 load();
+
+
 function load(){
 
 let tblitem = document.getElementById('tblitem');
 let newtr = "";
+
+if(myitems.items.length != 1 ){
+  myitems = JSON.parse(localStorage.getItem("myitem"));
+ 
+
+   // console.log(myarr);
+
+} else{
+ localStorage.setItem("myitem", JSON.stringify(myitems));
+}
+
+
+
+
 
 // console.log(myarr);
 myitems.items.forEach(function(item){
@@ -55,6 +71,8 @@ newtr += `<tr>
 
 tblitem.innerHTML = newtr;
 }
+
+
 load2();
 function load2(){
 
@@ -118,6 +136,7 @@ function deleteitem(index){
   loaditems();
 }
 
+// Receiving 
 
 let newPo ={myitems:[]};
 let newPo1 ={myitems:[]};
