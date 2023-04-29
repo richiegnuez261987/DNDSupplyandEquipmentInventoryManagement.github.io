@@ -18,7 +18,7 @@ fetch("../admin/Data/account.json")
 
         }else
         {
-            window.location.href = "user.html";
+            window.location.href = "../admin/home.html";
         
             sessionStorage.setItem("username", user.username);
 

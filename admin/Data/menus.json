@@ -30,12 +30,7 @@
 
     ], "UserReports":[
      
-      {
-            "menu": "Property",
-            "link": "property.html"
-            ,"icons":"fa fa-align-right"
-        },  {
-            "menu": "Stock Card",
+      {    "menu": "Stock Card",
             "link": "item.html"
             ,"icons":"fa fa-align-left"
         },  {
@@ -84,10 +79,6 @@
     ], "AdminReports":[
      
       {
-            "menu": "Property",
-            "link": "property.html"
-            ,"icons":"fa fa-align-right"
-        },  {
             "menu": "Stock Card",
             "link": "item.html"
             ,"icons":"fa fa-align-left"

@@ -10,9 +10,8 @@ txtPosition:"IT"
   ]}
   
 
-
+//  localStorage.removeItem("myemployee");
   
-    myitems = JSON.parse(localStorage.getItem("myemployee"));
 
   function saveemployee(){
     let txtfname = document.getElementById("txtfname");
@@ -21,43 +20,52 @@ txtPosition:"IT"
     let txtcontact = document.getElementById("txtcontact");
     let txtPosition = document.getElementById("txtPosition");
  
-  
     myitems.items.push({
-        txtfname:txtfname,
-        txtmname:txtmname,
-        txtlname:txtlname,
-        txtcontact:txtcontact,
-        txtPosition:txtPosition
+        txtfname:txtfname.value,
+        txtmname:txtmname.value,
+        txtlname:txtlname.value,
+        txtcontact:txtcontact.value,
+        txtPosition:txtPosition.value
     });
-     load();
-   
+
+  
     
     localStorage.setItem("myemployee", JSON.stringify(myitems));
-  //console.log(data);
-   
+     load();
+     //console.log(data);
+
   }
    load();
   function load(){
   
     let tblitem = document.getElementById('tblemployee');
     let newtr = "";
+    if(myitems.items.length != 1 ){
+   myitems = JSON.parse(localStorage.getItem("myemployee"));
   
-  
+
     // console.log(myarr);
-    myitems.items.forEach(function(item){
-      newtr +=  `<tr>
-      
-      <td>${item.txtfname}</td>
-      <td>${item.txtmname}</td>
-      <td>${item.txtlname}</td>
-      <td>${item.txtcontact}</td>
-      <td>${item.txtPosition}</td>
-    
-      <td>
-      <span class="btn btn-danger">Delete</span></td>
-      </tr>`;
-    });
+
+} else{
+  localStorage.setItem("myemployee", JSON.stringify(myitems));
+}
+
+
+myitems.items.forEach(function(item){
+  newtr +=  `<tr>
   
-  
-  tblitem.innerHTML = newtr;
+  <td>${item.txtfname}</td>
+  <td>${item.txtmname}</td>
+  <td>${item.txtlname}</td>
+  <td>${item.txtcontact}</td>
+  <td>${item.txtPosition}</td>
+
+  <td>
+  <span class="btn btn-danger">Delete</span></td>
+  </tr>`;
+});
+
+
+tblitem.innerHTML = newtr; 
+
   }

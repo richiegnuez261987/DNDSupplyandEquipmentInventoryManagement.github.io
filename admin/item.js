@@ -119,7 +119,9 @@ function deleteitem(index){
 }
 
 
-let newPo ={myitems:[]}
+let newPo ={myitems:[]};
+let newPo1 ={myitems:[]};
+newPo = JSON.parse(localStorage.getItem("myReceive"));
 let newdeteails = [];
 function savetrans(){
 let txtsupplier =document.getElementById('txtsupplier');
@@ -178,3 +180,234 @@ newdeteails.push();
 
   localStorage.setItem("myReceive", JSON.stringify(newPo));
 }
+
+showReceive();
+function showReceive(){
+  var details = "";
+  var tbldel = document.getElementById("tbldel");
+ 
+ //  console.log(newPo.myitems);
+   newPo.myitems.forEach(function(item){
+  details += `<tr>
+               <td>${item.txtsupplier}</td>
+               <td>${item.txtDr}</td>
+               <td>${item.dtpDrDate}</td>
+               <td>${item.txtpo}</td>
+               <td>${item.dtpPodate}</td>
+               
+             </tr>
+            
+             `;
+ 
+             item.details.forEach(function(newitem){
+               details += `<tr>
+               <td colspan="5">
+               <table class="table">
+                 <tr style="background-color: rgb(166, 204, 241); color: rgb(8, 8, 8);">
+                   <td>Item Name</td>
+                   <td>Description </td>
+                   <td>Quantity</td>
+                 </tr>
+               <tr>
+               <td>${newitem.itemname}</td>
+               <td>${newitem.description}</td>
+               <td>${newitem.quantity}</td>
+               </tr>
+               </table>
+ 
+               </td>
+              
+             </tr>
+            
+             `;
+             })
+   })
+   tbldel.innerHTML = details;
+ 
+
+ }
+
+
+ function loadEmployee(){
+  let newepm = {item:[]}
+  let tblitem = document.getElementById('tblemployee2');
+  let newtr = "";
+ 
+    newepm = JSON.parse(localStorage.getItem("myemployee"));
+
+
+  // console.log(myarr);
+
+
+
+newepm.items.forEach(function(item){
+
+newtr +=  `<tr class="tremployee" id="${item.txtfname}|${item.txtmname}|${item.txtlname}|${item.txtcontact}|${item.txtPosition}">
+
+<td>${item.txtfname}</td>
+<td>${item.txtmname}</td>
+<td>${item.txtlname}</td>
+<td>${item.txtcontact}</td>
+<td>${item.txtPosition}</td>
+
+
+</tr>`;
+});
+
+
+tblitem.innerHTML = newtr; 
+
+}
+  
+
+
+
+const records = [
+  { artist: 'The Beatles', album: 'Abbey Road', year: 1969 },
+  { artist: 'Pink Floyd', album: 'Dark Side of the Moon', year: 1973 },
+  { artist: 'Led Zeppelin', album: 'IV', year: 1971 },
+  // ... 97 more records
+];
+
+// Criteria to search for
+const searchCriteria = {
+  artist: 'Pink Floyd',
+  year: 1973
+};
+
+// Filter records based on search criteria
+const filteredRecords = records.filter(record => {
+  return Object.keys(searchCriteria).every(key => {
+    return record[key] === searchCriteria[key];
+  });
+});
+
+// Output filtered records
+// console.log(filteredRecords);
+
+loadEmployee();
+
+
+newPo1 = JSON.parse(localStorage.getItem("myIssuaance"));
+function showIssue(){
+
+  if(newPo1.myitems.length != 1 ){
+    newPo1 = JSON.parse(localStorage.getItem("myIssuaance"));
+   
+ 
+     // console.log(myarr);
+ 
+ } else{
+   localStorage.setItem("myIssuaance", JSON.stringify(newPo1));
+ }
+  var details = "";
+  var tbldel = document.getElementById("tblIssuance");
+ 
+ //  console.log(newPo.myitems);
+ newPo1.myitems.forEach(function(item){
+  details += `<tr>
+               <td>${item.txtfname}</td>
+               <td>${item.txtmname}</td>
+               <td>${item.txtlname}</td>
+               <td>${item.txtcontact}</td>
+               <td>${item.txtPosition}</td>
+               
+             </tr><tr>
+             <td colspan="5">
+             <table class="table">
+                 <tr style="background-color: rgb(166, 204, 241); color: rgb(8, 8, 8);">
+                 <td>Item Name</td>
+                 <td>Description </td>
+                 <td>Quantity</td>
+               </tr>
+            
+             `;
+ 
+             item.details.forEach(function(newitem){
+               details += `
+               <tr>
+               <td>${newitem.itemname}</td>
+               <td>${newitem.description}</td>
+               <td>${newitem.quantity}</td>
+               </tr>
+             
+            
+             `;
+             })
+
+
+             details +=`  </table>
+ 
+             </td>
+            
+           </tr>`;
+   })
+   tbldel.innerHTML = details;
+ 
+
+ }
+
+ function saveIssuance(){
+  let  txtfname = document.getElementById("txtfname");
+  let  txtmname = document.getElementById("txtmname");
+  let  txtlname = document.getElementById("txtlname");
+  let  txtcontact = document.getElementById("txtcontact");
+  let  txtPosition = document.getElementById("txtPosition");
+  alert("Successfully issued");
+  // newdeteails.push();
+  newPo1.myitems.push({
+      txtfname:txtfname.value,
+      txtmname:txtmname.value,
+      txtlname:txtlname.value,
+      txtcontact:txtcontact.value,
+      txtPosition:txtPosition.value,
+      details: itemrec.items
+    })
+   var details = "";
+   var tbldel = document.getElementById("tblIssuance");
+  
+  //  console.log(newPo.myitems);
+  newPo1.myitems.forEach(function(item){
+   details += `<tr>
+                <td>${item.txtfname}</td>
+                <td>${item.txtmname}</td>
+                <td>${item.txtlname}</td>
+                <td>${item.txtcontact}</td>
+                <td>${item.txtPosition}</td>
+                
+              </tr><tr>
+              <td colspan="5">
+              <table class="table">
+              <tr style="background-color: rgb(166, 204, 241); color: rgb(8, 8, 8);">
+                  <td>Item Name</td>
+                  <td>Description </td>
+                  <td>Quantity</td>
+                </tr>
+             
+              `;
+  
+              item.details.forEach(function(newitem){
+                details += `
+                <tr>
+                <td>${newitem.itemname}</td>
+                <td>${newitem.description}</td>
+                <td>${newitem.quantity}</td>
+                </tr>
+              
+             
+              `;
+              })
+
+
+              details +=`  </table>
+  
+              </td>
+             
+            </tr>`;
+    })
+    tbldel.innerHTML = details;
+  
+    localStorage.setItem("myIssuaance", JSON.stringify(newPo1));
+  }
+
+  showIssue();

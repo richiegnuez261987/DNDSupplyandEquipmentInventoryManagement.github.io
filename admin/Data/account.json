@@ -10,7 +10,7 @@
       },
       {"id":2,
         "username": "User",
-        "password": "NewUser",
+        "password": "user123",
         "usertype": "User",
         "completename":"User User User"
       }
